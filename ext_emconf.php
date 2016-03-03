@@ -10,7 +10,7 @@
 
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'Formhandler Maileon Subscription',
-	'description' => 'Liefert den REST-CURL-Finisher für Formhandler',
+	'description' => 'Liefert den REST-CURL-Finisher fÃ¼r Formhandler',
 	'category' => 'fe',
 	'author' => 'Johannes C. Schulz',
 	'author_email' => 'info@enzephalon.de',
@@ -30,8 +30,8 @@ $EM_CONF[$_EXTKEY] = array(
 	'version' => '0.1.0',
 	'constraints' => array (
 		'depends' => array (
-			'formhandler' => '1.0.0-2.9.99',
-			'typo3' => '4.5.0-6.2.99',
+			'formhandler' => '1.0.0-2.2.99',
+			'typo3' => '6.2.0-7.6.99',
 		),
 		'conflicts' => array (
 		),
