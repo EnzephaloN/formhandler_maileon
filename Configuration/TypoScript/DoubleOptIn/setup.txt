@@ -1,0 +1,74 @@
+#config.contentObjectExceptionHandler = 0
+plugin.Tx_Formhandler.settings.predef.maileon_doubleoptin {
+
+    # Common configuration
+    name = maileon Example
+    debug = 0
+    addErrorAnchors = 0
+    templateFile = EXT:formhandler_maileon/Resources/Private/Templates/Doubleoptin.html
+    langFile.1 = EXT:formhandler_maileon/Resources/Private/Language/Formhandler.xml
+    cssFile.1 = EXT:formhandler_maileon/Resources/Public/CSS/Styles.css
+    additionalIncludePaths.1 = EXT:formhandler_maileon/Classes/Formhandler
+    formValuesPrefix = formhandler
+
+    errorListTemplate {
+        totalWrap = <ul>|</ul>
+        singleWrap = <li class="error">|</li>
+    }
+    isErrorMarker.default = fuckedup
+
+    validators {
+        1 {
+            class = Tx_Formhandler_Validator_DefaultValidator
+            config {
+                fieldConf {
+                    firstname {
+                        errorCheck.1 = required
+                        errorCheck.2 = maxLength
+                        errorCheck.2.value = 50
+                    }
+                    lastname {
+                        errorCheck.1 = required
+                        errorCheck.2 = maxLength
+                        errorCheck.2.value = 50
+                    }
+                    email {
+                        errorCheck.1 = required
+                        errorCheck.2 = email
+                    }
+                    confirm{
+                        errorCheck.1 = required
+                    }
+                }
+            }
+        }
+    }
+    
+    # Finishers configuration
+    finishers {  
+        2.class = \Enzephalon\FormhandlerMaileon\Finisher\Subscribe
+        2.config < plugin.tx_formhandlermaileon.config
+        2.config {
+            fields {
+                #api field name
+                firstname {
+                    # form fieldname
+                    mapping = firstname
+                }
+                lastname {
+                    mapping = lastname
+                }
+                email {
+                    mapping = email
+                }
+                salutation{
+                    mapping = salutation
+                }
+            }
+        }
+        3.class = Tx_Formhandler_Finisher_SubmittedOK
+        3.config {
+            returns = 1
+        }
+    }
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <data type="array">
+        <languageKey index="default" type="array">
+        	<label index="firstname">Firstname</label>
+        	<label index="lastname">Lastname</label>
+        	<label index="email">Emailaddress</label>
+        	<label index="submit">Send request</label>
+            <label index="thankyou">Thank you for ordering our newsletter. Please follow the link in the email you recieving right now, for activating your subscription.</label>
+            <label index="confirm">Ja, ich abonniere den kostenlosen Veranstaltungskalender der Weimarhalle per Email. Mir ist bewusst, dass mein(e) Daten/Nutzungsverhalten elektronisch gespeichert und zum Zweck der Verbesserung des Kundenservices ausgewertet und verarbeitet werden und dass ich mich jederzeit abmelden kann.</label>
+            <label index="error_salutation_required">Please enter your gender</label>
+            <label index="error_firstname_required">Please enter your firstname</label>
+            <label index="error_lastname_required">Please enter your lastname</label>
+            <label index="error_email_required">Please enter your email address</label>
+            <label index="error_firstname_maxlength">Your firstname is too long</label>
+            <label index="error_lastname_maxlength">Your lastname is too long</label>
+            <label index="error_email_email">Please enter an valid email address</label>
+            <label index="error_confirm_required">Please accept our terms</label>
+            <label index="200">OK</label>
+            <label index="201">Created</label>
+            <label index="202">Accepted</label>
+            <label index="204">No Content</label>
+            <label index="301">Moved Permanently</label>
+            <label index="303">See Other</label>
+            <label index="304">Not Modified</label>
+            <label index="307">Temporary Redirect</label>
+            <label index="400">Bad Request</label>
+            <label index="401">Unauthorized</label>
+            <label index="403">Forbidden</label>
+            <label index="404">Not Found</label>
+            <label index="406">Not Acceptable</label>
+            <label index="409">Conflict</label>
+            <label index="410">Gone</label>
+            <label index="412">Precondition Failed</label>
+            <label index="415">Unsupported Media Type</label>
+            <label index="500">Internal Server Error</label>
+            <label index="503">Service Unavailable</label>
+        </languageKey>
+        <languageKey index="de" type="array">
+        	<label index="firstname">Vorname</label>
+        	<label index="lastname">Nachname</label>
+        	<label index="email">Emailadresse</label>
+        	<label index="submit">Abschicken</label>
+            <label index="confirm">Ja, ich abonniere den kostenlosen Veranstaltungskalender der Weimarhalle per Email. Mir ist bewusst, dass mein(e) Daten/Nutzungsverhalten elektronisch gespeichert und zum Zweck der Verbesserung des Kundenservices ausgewertet und verarbeitet werden und dass ich mich jederzeit abmelden kann.</label>
+            <label index="thankyou">Danke daß Sie unseren Newsletter bestellt haben. Bitte folgen Sie dem Link in der Bestätigungsemail um Ihre Anmeldung zu bestätigen.</label>
+            <label index="error_salutation_required">Bitte geben Sie Ihre Anrede an.</label>
+            <label index="error_firstname_required">Bitte geben Sie Ihren Vornamen ein.</label>
+            <label index="error_lastname_required">Bitte geben Sie Ihren Nachnamen ein.</label>
+            <label index="error_email_required">Bitte geben Sie Ihre Emailadresse ein.</label>
+            <label index="error_firstname_maxlength">Der eingegebene Vorname ist zu lang.</label>
+            <label index="error_lastname_maxlength">Der eingegebene Nachname ist zu lang.</label>
+            <label index="error_email_email">Die eingegebene Emailadresse entspricht nicht der Nomenklatur.</label>
+            <label index="error_confirm_required">Die Hinweise zum Newsletter müssen akzeptiert werden.</label>
+        </languageKey>
+    </data>
+</T3locallang>

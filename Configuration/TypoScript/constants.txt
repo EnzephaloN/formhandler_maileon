@@ -1,0 +1,12 @@
+plugin.tx_formhandlermaileon {
+    # cat=plugin.tx_formhandlermaileon//a; type=string; label=API key: Der API-Key
+    apiKey = 
+    # cat=plugin.tx_formhandlermaileon//b; type=string; label=DOI key: Der DOI-Key
+    doiKey = 
+    # cat=plugin.tx_formhandlermaileon//c; type=string; label=Form parameters without leading questionmark:Fomular Parameter ohne führendes Fragezeichen
+    formParams = permission=1&sync_mode=1&doi=true&doiplus=true
+    # cat=plugin.tx_formhandlermaileon//d; type=string; label=remote Form URL
+    formUrl = https://api.maileon.com/1.0/contacts
+    # cat=plugin.tx_formhandlermaileon//e; type=string; label=Additional custom_fields outside form as semikolon separetd list:Zusätzliche custom_fields außerhalb des Formulares
+    customfields = Datenquelle=CPI
+}

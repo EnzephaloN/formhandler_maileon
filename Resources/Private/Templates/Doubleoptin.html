@@ -1,0 +1,49 @@
+<!-- ###TEMPLATE_FORM1### begin -->
+<div class="csc-mailform csc-textpic">
+	###ERROR###
+	<form method="post" id="formhandler_newsletter_form" action="###REL_URL###" enctype="multipart/form-data">
+		<input type="hidden" name="formhandler[submitted]" value="1" />
+		<ol>
+			<li class="csc-form-2 csc-form-element csc-form-element-select csc-form-element-textline">
+				<label for="salutation">Anrede</label>
+				<select name="formhandler[salutation]" >
+		              <option value="Sehr geehrte Damen und Herren">Bitte wählen</option>
+		              <option value="Sehr geehrter Herr">Herr</option>
+		              <option value="Sehr geehrte Frau">Frau</option>
+		        </select>
+			</li>
+			<li class="csc-form-2 csc-form-element csc-form-element-select csc-form-element-textline">
+				<label for="firstname">###LLL:firstname### ###required_firstname###</label>
+				<input  class="###is_error_firstname###" type="text" name="formhandler[firstname]" id="firstname" value="###value_firstname###"/>
+			</li>
+			<li class="csc-form-2 csc-form-element csc-form-element-select csc-form-element-textline">
+				<label for="lastname">###LLL:lastname### ###required_lastname###</label>
+				<input type="text" name="formhandler[lastname]" id="lastname" value="###value_lastname###" class="###is_error_lastname###"/>
+			</li>
+			<li class="csc-form-2 csc-form-element csc-form-element-select csc-form-element-textline">
+				<label for="email">###LLL:email### ###required_email###</label>
+				<input type="text" name="formhandler[email]" id="email" value="###value_email###" class="###is_error_email###"/>
+			</li>
+			<li class="csc-form-2" style="padding: 10px 0;border-top: 1px solid #626261; margin-bottom: 20px; transition: border-color 0.18s ease-in-out 0s;">
+				<input style="margin-left: 100px;float:left;" type="checkbox" name="formhandler[confirm]" id="confirm" class=" ###is_error_confirm###"/>
+				<div style="width: 230px;margin-left: 139px;font-size: 13px;">
+					###LLL:confirm###
+				</div>
+			</li>
+			<li class="csc-form-2 csc-form-element csc-form-element-submit">
+				<input type="hidden" ###submit_nextStep### value="###LLL:submit###" />
+				<input type="submit" value="###LLL:submit###" />
+			</li>
+		</ol>
+	</form>
+</div>
+<!-- ###TEMPLATE_FORM1### end -->
+
+
+<!-- ###TEMPLATE_SUBMITTEDOK### begin -->
+
+<p>###LLL:thankyou###</p>
+<p>###LLL:###code######</p>
+
+
+<!-- ###TEMPLATE_SUBMITTEDOK### end -->

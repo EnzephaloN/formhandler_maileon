@@ -1,0 +1,11 @@
+plugin.tx_formhandlermaileon {
+    settings {
+        apiKey = {$plugin.tx_formhandlermaileon.apiKey}
+        doiKey = {$plugin.tx_formhandlermaileon.doiKey}
+        formUrl = {$plugin.tx_formhandlermaileon.formUrl}
+        formParams = {$plugin.tx_formhandlermaileon.formParams}
+        customfields = {$plugin.tx_formhandlermaileon.customfields}
+    }
+    config < .settings
+}
+

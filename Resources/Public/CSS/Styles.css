@@ -1,0 +1,27 @@
+.fuckedup{border: 1px solid #990504 !IMPORTANT;}
+li.error{color: #FF5F5F;font-style: italic; }
+
+#tourismus .Tx-Formhandler{ margin-bottom:50px;padding-bottom:10px;border-bottom: 1px dotted #7e7e7e;}
+#tourismus ol{list-style-type: none;display:inline;margin: 0!IMPORTANT;}
+#tourismus ol li{display:block; float:left;width: 564px;}
+#tourismus ol li label{display:block; float:left; width: 120px; border-top: 1px dotted #dedede;}
+#tourismus ol li input[type="text"], #tourismus ol li textarea, #tourismus ol li select{display:block;width:200px;float:left;padding: 5px;margin: 0 0 10px 0;}
+#tourismus ol li input[type="submit"]{
+	align-items: flex-start;
+	text-align: center;
+	cursor: default;
+	color: buttontext;
+	padding: 2px 6px 3px;
+	border: 2px outset buttonface;
+	border-image-source: initial;
+	border-image-slice: initial;
+	border-image-width: initial;
+	border-image-outset: initial;
+	border-image-repeat: initial;
+	background-color: buttonface;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	width: auto;
+	display: inline;
+	clear: both;
+}
