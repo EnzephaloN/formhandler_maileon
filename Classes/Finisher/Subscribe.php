@@ -59,19 +59,19 @@ class Subscribe extends Maileon {
 		}
 		$customfields = array_merge($arr_customfields,$this->parseFields('additionalfields.'));
 
-        $curlSession = curl_init();
-        curl_setopt($curlSession, CURLOPT_URL, $this->getUrl($standardfields));
-        curl_setopt($curlSession, CURLOPT_FOLLOWLOCATION, 1);
-        curl_setopt($curlSession, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($curlSession, CURLOPT_HEADER, 1);
-        curl_setopt($curlSession, CURLOPT_HTTPHEADER, $this->getHeaderstrings());
-        curl_setopt($curlSession, CURLOPT_POST, 1);
-        curl_setopt($curlSession, CURLOPT_POSTFIELDS, $this->getContent($standardfields,$customfields));
-        $response = curl_exec($curlSession);
-        $response = $response ? $response: null;
-        $code =  substr($response, 9,3);
-        
-        return $code;		
+                $curlSession = curl_init();
+                curl_setopt($curlSession, CURLOPT_URL, $this->getUrl($standardfields));
+                curl_setopt($curlSession, CURLOPT_FOLLOWLOCATION, 1);
+                curl_setopt($curlSession, CURLOPT_RETURNTRANSFER, 1);
+                curl_setopt($curlSession, CURLOPT_HEADER, 1);
+                curl_setopt($curlSession, CURLOPT_HTTPHEADER, $this->getHeaderstrings());
+                curl_setopt($curlSession, CURLOPT_POST, 1);
+                curl_setopt($curlSession, CURLOPT_POSTFIELDS, $this->getContent($standardfields,$customfields));
+                $response = curl_exec($curlSession);
+                $response = $response ? $response: null;
+                $code =  substr($response, 9,3);
+
+                return $code;		
 	}
 
 	public function getUrl($standardfields){

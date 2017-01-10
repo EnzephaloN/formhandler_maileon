@@ -2,7 +2,7 @@
 plugin.Tx_Formhandler.settings.predef.maileon_doubleoptin {
 
     # Common configuration
-    name = maileon Example
+    name = maileon DoubleOptIn
     debug = 0
     addErrorAnchors = 0
     templateFile = EXT:formhandler_maileon/Resources/Private/Templates/Doubleoptin.html
@@ -19,7 +19,7 @@ plugin.Tx_Formhandler.settings.predef.maileon_doubleoptin {
 
     validators {
         1 {
-            class = Tx_Formhandler_Validator_DefaultValidator
+            class = Validator\Default
             config {
                 fieldConf {
                     firstname {
@@ -66,7 +66,7 @@ plugin.Tx_Formhandler.settings.predef.maileon_doubleoptin {
                 }
             }
         }
-        3.class = Tx_Formhandler_Finisher_SubmittedOK
+        3.class = Finisher\SubmittedOK
         3.config {
             returns = 1
         }
