@@ -8,7 +8,7 @@ plugin.Tx_Formhandler.settings.predef.maileon_doubleoptin {
     templateFile = EXT:formhandler_maileon/Resources/Private/Templates/Doubleoptin.html
     langFile.1 = EXT:formhandler_maileon/Resources/Private/Language/Formhandler.xml
     cssFile.1 = EXT:formhandler_maileon/Resources/Public/CSS/Styles.css
-    additionalIncludePaths.1 = EXT:formhandler_maileon/Classes/Formhandler
+    additionalIncludePaths.1 = EXT:formhandler_maileon/Classes/Finisher
     formValuesPrefix = formhandler
 
     errorListTemplate {
@@ -45,7 +45,7 @@ plugin.Tx_Formhandler.settings.predef.maileon_doubleoptin {
     }
     
     # Finishers configuration
-    finishers {  
+    finishers {
         2.class = \Enzephalon\FormhandlerMaileon\Finisher\Subscribe
         2.config < plugin.tx_formhandlermaileon.config
         2.config {
