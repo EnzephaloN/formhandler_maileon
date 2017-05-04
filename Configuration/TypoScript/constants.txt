@@ -8,5 +8,5 @@ plugin.tx_formhandlermaileon {
     # cat=plugin.tx_formhandlermaileon//d; type=string; label=remote Form URL
     formUrl = https://api.maileon.com/1.0/contacts
     # cat=plugin.tx_formhandlermaileon//e; type=string; label=Additional custom_fields outside form as semikolon separetd list:Zusätzliche custom_fields außerhalb des Formulares
-    customfields = Datenquelle=CPI
+    customfields = Datenquelle=CPI;Endkunden=1
 }
